@@ -1,0 +1,6 @@
+site_name: Sample documentation Site
+nav:
+  - Welcome to the Zephyr Documentation: index.md
+  - Zephyr Editions Feature Comparison: comparison.md
+  - About: about.md
+theme: readthedocs
