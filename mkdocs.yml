@@ -3,5 +3,8 @@ nav:
   - Welcome to the Zephyr Documentation: index.md
   - Zephyr Editions Feature Comparison: comparison.md
   - Roadmap: roadmap.md
+  - Migrate to Zephyr:
+      - Migrate to Zephyr: Migrate to Zephyr.md
+      - Squad to Zephyr Upgrade Guide: Squad to Zephyr Upgrade Guide.md
   - About: about.md
 theme: readthedocs
