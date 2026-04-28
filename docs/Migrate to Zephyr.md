@@ -130,3 +130,9 @@ The following data is not migrated:
 ## Support
 
 If you encounter issues during migration, contact SmartBear support for assistance.
+
+## Watch the demo
+
+Learn how migration works in Zephyr:
+
+[![Zephyr migration demo](https://support.smartbear.com/zephyr/docs/en/image/uuid-cee830bf-08a2-5c84-5377-de49e75eea57.png)](https://www.youtube.com/watch?v=QbtmHlUvaeI)
