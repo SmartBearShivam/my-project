@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Product comparison - Sample documentation Site</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Product comparison";
+        var mkdocs_page_input_path = "Product comparison.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Sample documentation Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome to the Zephyr Documentation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../comparison/">Zephyr Editions Feature Comparison</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../roadmap/">Roadmap</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Migrate to Zephyr</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Migrate%20to%20Zephyr/">Migrate to Zephyr</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Squad%20to%20Zephyr%20Upgrade%20Guide/">Squad to Zephyr Upgrade Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Feature%20comparison/">Feature comparison</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Product comparison</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#test-management">Test management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-planning-and-execution">Test planning and execution</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user-management">User management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reports-and-advanced-analytics">Reports and advanced analytics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#behavior-driven-development">Behavior-driven development</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#automation">Automation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-features">Other features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#key-differences">Key differences</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#test-cycle-folder-structure">Test cycle folder structure</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#test-execution-history">Test execution history</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#search-test-executions">Search test executions</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#export-test-cycles">Export test cycles</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#reports-and-gadgets">Reports and gadgets</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#cucumber-and-gherkin-support">Cucumber and Gherkin support</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#automation_1">Automation</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#smartbear-tools-integration">SmartBear tools integration</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rest-api-differences">REST API differences</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Data%20transfer/">Data Transfer</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Sample documentation Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Migrate to Zephyr</li>
+      <li class="breadcrumb-item active">Product comparison</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="zephyr-squad-and-zephyr-feature-comparison">Zephyr Squad and Zephyr feature comparison</h1>
+<p>This section compares key features in Zephyr Squad and Zephyr or Zephyr Essential.</p>
+<h2 id="test-management">Test management</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr or Zephyr Essential</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requirement management</td>
+<td>Yes, through Jira</td>
+<td>Yes, through Jira</td>
+</tr>
+<tr>
+<td>Requirement and test case coverage traceability</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case folder structure</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case data</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case parameters</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test steps</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test step wiki formatting</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Import test cases</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case repository</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case versioning</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case archiving</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case history</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case search</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case saved filter</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case bulk creation</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case bulk edit</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test case clone</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Reuse and execute test cases across spaces</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Cross-space reporting and dashboard</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Call to test to reuse test steps</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="test-planning-and-execution">Test planning and execution</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr or Zephyr Essential</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test cycles</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test cycle history</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test cycle folder structure</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>N-level folder structure</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Flexible move and copy across cycle folders</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test plans</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test plan history</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test execution</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test step results</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Test execution history</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Defect link on test execution</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Defect link on test step results</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Time tracking during execution</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Search test executions</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Export test cycles</td>
+<td>CSV, HTML, XML</td>
+<td>Excel</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-management">User management</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr or Zephyr Essential</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roles and groups</td>
+<td>Yes, through Jira</td>
+<td>Yes, through Jira</td>
+</tr>
+<tr>
+<td>Permission control</td>
+<td>Yes, through Jira</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reports-and-advanced-analytics">Reports and advanced analytics</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr or Zephyr Essential</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Built-in reports, including traceability</td>
+<td>Yes, up to five</td>
+<td>Yes, up to 31</td>
+</tr>
+<tr>
+<td>Jira dashboard gadgets</td>
+<td>Yes, up to nine</td>
+<td>Yes, up to 19</td>
+</tr>
+<tr>
+<td>Test execution details gadget</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Top Defects Impacting Testing gadget</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Executions By Date gadget</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="behavior-driven-development">Behavior-driven development</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr or Zephyr Essential</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cucumber and Gherkin integration</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Advanced features, such as Gherkin validations and tag management</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h2 id="automation">Automation</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr or Zephyr Essential</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supported automation frameworks</td>
+<td>Eggplant, JUnit, Selenium, TestNG, Tricentis Tosca, UFT, Cucumber, Robot, and PyTest</td>
+<td>JUnit, Selenium, TestNG, Tricentis Tosca, UFT, Cucumber, Robot, and PyTest</td>
+</tr>
+<tr>
+<td>CI/CD script integration</td>
+<td>Bitbucket Pipelines, TeamCity, CircleCI, GitLab, Azure DevOps, and others</td>
+<td>Bitbucket Pipelines, TeamCity, CircleCI, GitLab, Azure DevOps, and others</td>
+</tr>
+<tr>
+<td>CI/CD native integrations</td>
+<td>Jenkins and Bamboo</td>
+<td>Jenkins and Bamboo</td>
+</tr>
+<tr>
+<td>SmartBear tools integration</td>
+<td>ReadyAPI, TestComplete, CrossBrowserTesting, and LoadNinja</td>
+<td>No</td>
+</tr>
+<tr>
+<td>APIs for custom integrations</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Import test cases from other tools</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-features">Other features</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr or Zephyr Essential</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team-managed project support</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Internationalization support</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Server to Cloud migration support</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>GDPR compliance</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Cloud Security participant</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Cloud Fortified support</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-differences">Key differences</h2>
+<h3 id="test-cycle-folder-structure">Test cycle folder structure</h3>
+<p>In Zephyr Squad, cycles are organized by releases. Users can create folders within a cycle to add another level of organization.</p>
+<p>In Zephyr, users can organize test cycles into hierarchical folders. These folders are not tied to releases. Test cases can be added to a cycle in a flat list.</p>
+<h3 id="test-execution-history">Test execution history</h3>
+<p>Zephyr Squad logs test execution history for status changes, attachments, assignees, comments, and custom fields.</p>
+<p>Zephyr does not track history at the individual test execution level. Zephyr tracks changes at the test cycle level.</p>
+<h3 id="search-test-executions">Search test executions</h3>
+<p>Zephyr Squad includes a Search Test Executions page with basic search, advanced search, saved filters, and predefined filters.</p>
+<p>Zephyr does not include a dedicated search test executions page.</p>
+<h3 id="export-test-cycles">Export test cycles</h3>
+<p>Zephyr Squad supports exporting test cycles from Cycle Summary and Search Test Executions in CSV, HTML, and XML formats.</p>
+<p>Zephyr supports exporting test cycle information through reports in Excel format.</p>
+<h3 id="reports-and-gadgets">Reports and gadgets</h3>
+<p>Zephyr Squad includes up to five built-in reports and up to nine Jira dashboard gadgets.</p>
+<p>Zephyr includes up to 31 reports and up to 19 Jira dashboard gadgets. Some Zephyr Squad reports and gadgets do not have direct equivalents in Zephyr, including:</p>
+<ul>
+<li>Test execution details gadget.</li>
+<li>Top Defects Impacting Testing gadget.</li>
+<li>Executions By Date gadget.</li>
+</ul>
+<h3 id="cucumber-and-gherkin-support">Cucumber and Gherkin support</h3>
+<p>Zephyr does not include a feature editor or tag management. Zephyr exports one feature file per test case, while Zephyr Squad supports feature-level organization.</p>
+<p>Zephyr provides a more detailed test case result view with additional error details.</p>
+<h3 id="automation_1">Automation</h3>
+<p>Zephyr does not include a UI for creating automation tasks. Zephyr uses REST API endpoints and supports Cucumber, JUnit 5, and JUnit 4 file formats.</p>
+<p>Some frameworks supported by Zephyr Squad require result conversion to JUnit format before use in Zephyr.</p>
+<h3 id="smartbear-tools-integration">SmartBear tools integration</h3>
+<p>Zephyr Squad integrates with the following SmartBear tools:</p>
+<ul>
+<li>TestComplete.</li>
+<li>ReadyAPI.</li>
+<li>LoadNinja.</li>
+<li>CrossBrowserTesting.</li>
+</ul>
+<p>Zephyr does not provide direct integrations with these tools. Use Zephyr REST APIs to upload results.</p>
+<h3 id="rest-api-differences">REST API differences</h3>
+<p>Zephyr Squad and Zephyr use different REST APIs. Review and update custom integrations before migration.</p>
+<ul>
+<li>Zephyr Squad API: Zephyr Squad Cloud REST API.</li>
+<li>Zephyr API: Zephyr for Jira Cloud API.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Feature%20comparison/" class="btn btn-neutral float-left" title="Feature comparison"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Data%20transfer/" class="btn btn-neutral float-right" title="Data Transfer">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Feature%20comparison/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Data%20transfer/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

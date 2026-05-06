@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Feature comparison - Sample documentation Site</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Feature comparison";
+        var mkdocs_page_input_path = "Feature comparison.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Sample documentation Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome to the Zephyr Documentation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../comparison/">Zephyr Editions Feature Comparison</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../roadmap/">Roadmap</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Migrate to Zephyr</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Migrate%20to%20Zephyr/">Migrate to Zephyr</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Squad%20to%20Zephyr%20Upgrade%20Guide/">Squad to Zephyr Upgrade Guide</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Feature comparison</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#test-management">Test management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-planning-and-execution">Test planning and execution</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user-management">User management</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#reports-and-analytics">Reports and analytics</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#jira-agile-board">Jira Agile board</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#behavior-driven-development">Behavior-driven development</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#automation">Automation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuration-and-administration">Configuration and administration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#other-capabilities">Other capabilities</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data-architecture-differences">Data architecture differences</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#migration-considerations">Migration considerations</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Product%20comparison/">Product comparison</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Data%20transfer/">Data Transfer</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Sample documentation Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Migrate to Zephyr</li>
+      <li class="breadcrumb-item active">Feature comparison</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="zephyr-squad-to-zephyr-feature-comparison">Zephyr Squad to Zephyr feature comparison</h1>
+<p>Use this reference to compare Zephyr Squad and Zephyr capabilities before migration.</p>
+<h2 id="test-management">Test management</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test issue type</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>In Zephyr Squad, test cases are Jira issues. In Zephyr, test cases are internal Zephyr objects managed by SmartBear.</td>
+</tr>
+<tr>
+<td>Test cases</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Test cases migrate to Zephyr, but use a different data architecture.</td>
+</tr>
+<tr>
+<td>Test case custom fields</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Advanced custom field types are not migrated.</td>
+</tr>
+<tr>
+<td>Test case attachments</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Attachments migrate with test cases.</td>
+</tr>
+<tr>
+<td>Multiple components</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>If a test case has multiple components, one component maps to the component field. Other components map to the <strong>Squad components</strong> custom field.</td>
+</tr>
+<tr>
+<td>Test steps</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Test steps migrate to Zephyr.</td>
+</tr>
+<tr>
+<td>Test step wiki formatting</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Wiki formatting migrates to Zephyr.</td>
+</tr>
+<tr>
+<td>Test step custom fields</td>
+<td>Yes, maximum five</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Test step custom fields migrate to Zephyr.</td>
+</tr>
+<tr>
+<td>Test step attachments</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Test step attachments migrate to Zephyr.</td>
+</tr>
+<tr>
+<td>Export test cases with test steps</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr supports export through supported formats.</td>
+</tr>
+<tr>
+<td>Import test cases</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr supports import using CSV, Excel through CSV, and XML.</td>
+</tr>
+<tr>
+<td>Test repository</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr includes a test repository.</td>
+</tr>
+<tr>
+<td>Test case archiving</td>
+<td>Yes for Server and Data Center, no for Cloud</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr supports archived test cases.</td>
+</tr>
+<tr>
+<td>Test case history</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Test case history migrates to Zephyr.</td>
+</tr>
+<tr>
+<td>Test step history</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Test step history migrates to Zephyr.</td>
+</tr>
+<tr>
+<td>Test case search</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Search is available in both products.</td>
+</tr>
+<tr>
+<td>Test case saved filters</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>Saved filters are not migrated.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="test-planning-and-execution">Test planning and execution</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test cycles</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Test cycles are supported in both products.</td>
+</tr>
+<tr>
+<td>Test cycle custom fields</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr Squad.</td>
+</tr>
+<tr>
+<td>Test cycle attachments</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr Squad.</td>
+</tr>
+<tr>
+<td>Ad hoc test cycles</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports ad hoc test executions.</td>
+</tr>
+<tr>
+<td>Multi-level folder structure</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr Squad.</td>
+</tr>
+<tr>
+<td>Test cycle organization</td>
+<td>Versions and subfolders within cycles</td>
+<td>No direct equivalent</td>
+<td>Not applicable</td>
+<td>Zephyr Squad organizes cycles by releases and folders.</td>
+</tr>
+<tr>
+<td>Export test cycles</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr exports test cycle data through reports.</td>
+</tr>
+<tr>
+<td>Test cycle search</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Search is available in both products.</td>
+</tr>
+<tr>
+<td>Test plans</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr Squad.</td>
+</tr>
+<tr>
+<td>Test plan search</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr Squad.</td>
+</tr>
+<tr>
+<td>Test plan custom fields</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr Squad.</td>
+</tr>
+<tr>
+<td>Test plan attachments</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Test plan attachment migration status is not finalized.</td>
+</tr>
+<tr>
+<td>Test execution</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Test executions are supported in both products.</td>
+</tr>
+<tr>
+<td>Test execution custom fields</td>
+<td>Yes, maximum five</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports test execution custom fields.</td>
+</tr>
+<tr>
+<td>Test execution attachments</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports test execution attachments.</td>
+</tr>
+<tr>
+<td>Test execution custom status</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports custom execution statuses.</td>
+</tr>
+<tr>
+<td>Defect link on test execution</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Defects can be linked to test executions.</td>
+</tr>
+<tr>
+<td>Multiple test executions in test cycle</td>
+<td>Only on ad hoc cycles</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports multiple test executions in a test cycle.</td>
+</tr>
+<tr>
+<td>Export test execution</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr exports test execution data through reports.</td>
+</tr>
+<tr>
+<td>Test step results</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports test step results.</td>
+</tr>
+<tr>
+<td>Test step result attachments</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports attachments on test step results.</td>
+</tr>
+<tr>
+<td>Test step result custom status</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports custom statuses for test step results.</td>
+</tr>
+<tr>
+<td>Defect link on test step results</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Defects can be linked to test step results.</td>
+</tr>
+<tr>
+<td>Time tracking during execution</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>To be determined</td>
+<td>Zephyr supports time tracking.</td>
+</tr>
+<tr>
+<td>Reporting on test execution</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr provides similar reporting capabilities.</td>
+</tr>
+<tr>
+<td>Reporting on top defects</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>This feature does not exist in Zephyr.</td>
+</tr>
+<tr>
+<td>Traceability</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr provides similar traceability capabilities.</td>
+</tr>
+<tr>
+<td>Search test executions</td>
+<td>Yes</td>
+<td>No</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr.</td>
+</tr>
+<tr>
+<td>Test execution filters</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>This feature does not exist in Zephyr.</td>
+</tr>
+<tr>
+<td>Test execution bulk operations</td>
+<td>Yes</td>
+<td>Partial</td>
+<td>Not applicable</td>
+<td>Zephyr supports bulk assignment of tester, environment, and iteration.</td>
+</tr>
+<tr>
+<td>Test execution change history</td>
+<td>Yes</td>
+<td>No</td>
+<td>Partial</td>
+<td>Zephyr records changes at the test cycle level only. Execution status changes are not recorded.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user-management">User management</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Roles and groups</td>
+<td>Yes, through Jira</td>
+<td>Yes, through Jira</td>
+<td>Not applicable</td>
+<td>Uses Jira roles and groups.</td>
+</tr>
+<tr>
+<td>Permission control</td>
+<td>Jira permissions in Cloud. Jira and Zephyr permissions in Server.</td>
+<td>Jira and Zephyr permissions</td>
+<td>Not applicable</td>
+<td>Zephyr includes Jira and Zephyr permission controls.</td>
+</tr>
+<tr>
+<td>Issue type support control</td>
+<td>Yes for team-managed projects. No for company-managed projects.</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr supports issue type configuration.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reports-and-analytics">Reports and analytics</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jira dashboard gadgets</td>
+<td>Nine gadgets</td>
+<td>21 gadgets</td>
+<td>Not applicable</td>
+<td>Test execution details and Top Defects Impacting Testing have no direct Zephyr equivalent.</td>
+</tr>
+<tr>
+<td>Jira reports</td>
+<td>Three reports</td>
+<td>No</td>
+<td>Not applicable</td>
+<td>Zephyr uses its own reports section.</td>
+</tr>
+<tr>
+<td>Zephyr test metrics page</td>
+<td>Five reports</td>
+<td>29 reports</td>
+<td>Yes</td>
+<td>Zephyr provides reporting through the Reports tab.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jira-agile-board">Jira Agile board</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Link test cycles or folders to a sprint</td>
+<td>Yes</td>
+<td>No</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr.</td>
+</tr>
+<tr>
+<td>Test execution view in issue backlog</td>
+<td>Yes</td>
+<td>No</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="behavior-driven-development">Behavior-driven development</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cucumber and Gherkin integration</td>
+<td>Yes</td>
+<td>Partial</td>
+<td>Not applicable</td>
+<td>Zephyr does not support BDD feature file creation.</td>
+</tr>
+<tr>
+<td>Advanced Gherkin features</td>
+<td>Yes</td>
+<td>Partial</td>
+<td>Not applicable</td>
+<td>Zephyr supports Gherkin validations, but does not support tag management.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="automation">Automation</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supported automation frameworks</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr supports common frameworks through JUnit and Cucumber JSON formats.</td>
+</tr>
+<tr>
+<td>Test automation integration UI</td>
+<td>Yes</td>
+<td>No</td>
+<td>Not applicable</td>
+<td>Zephyr uses REST API for test automation.</td>
+</tr>
+<tr>
+<td>ZBot</td>
+<td>Yes</td>
+<td>No</td>
+<td>Not applicable</td>
+<td>ZBot is not available in Zephyr.</td>
+</tr>
+<tr>
+<td>CI/CD tool support</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Both products support CI/CD integrations through post-build actions.</td>
+</tr>
+<tr>
+<td>REST API support</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr Squad and Zephyr APIs are different. Update integrations before migration.</td>
+</tr>
+<tr>
+<td>SmartBear tool integrations</td>
+<td>Yes</td>
+<td>No</td>
+<td>Not applicable</td>
+<td>Zephyr Squad integrates with TestComplete, ReadyAPI, LoadNinja, and CrossBrowserTesting.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="configuration-and-administration">Configuration and administration</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reindexing</td>
+<td>Yes</td>
+<td>Not required</td>
+<td>Not applicable</td>
+<td>Zephyr does not require reindexing.</td>
+</tr>
+<tr>
+<td>Custom status</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Zephyr supports custom statuses for test cases, plans, cycles, and executions.</td>
+</tr>
+<tr>
+<td>Custom environment</td>
+<td>Jira environment field</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Custom environments migrate to Zephyr.</td>
+</tr>
+<tr>
+<td>Custom labels</td>
+<td>Jira label field</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Custom labels migrate to Zephyr.</td>
+</tr>
+<tr>
+<td>Custom priorities</td>
+<td>Jira priority field</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Custom priorities migrate to Zephyr.</td>
+</tr>
+<tr>
+<td>Custom datasets</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>This feature does not exist in Zephyr Squad.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="other-capabilities">Other capabilities</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Zephyr Squad</th>
+<th>Zephyr</th>
+<th>Can be migrated</th>
+<th>Additional information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team-managed project support</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Both products support team-managed projects.</td>
+</tr>
+<tr>
+<td>Internationalization</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Supported languages differ by product.</td>
+</tr>
+<tr>
+<td>GDPR compliance</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Both products support GDPR requirements.</td>
+</tr>
+<tr>
+<td>Cloud Security Participant</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Both products participate in Atlassian Cloud Security programs.</td>
+</tr>
+<tr>
+<td>Cloud Fortified support</td>
+<td>No</td>
+<td>Yes</td>
+<td>Not applicable</td>
+<td>Zephyr supports Cloud Fortified requirements.</td>
+</tr>
+<tr>
+<td>Data storage</td>
+<td>Jira and SmartBear servers</td>
+<td>SmartBear servers</td>
+<td>Not applicable</td>
+<td>Zephyr stores data on SmartBear servers and does not store test data on Jira servers.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="data-architecture-differences">Data architecture differences</h2>
+<p>In Zephyr Squad, test cases are Jira issues. In Zephyr, test cases are internal Zephyr objects managed by SmartBear.</p>
+<p>This architecture reduces the impact on Jira performance because Zephyr does not store test management data on Jira servers.</p>
+<h2 id="migration-considerations">Migration considerations</h2>
+<p>Review the following before migration:</p>
+<ul>
+<li>Zephyr Squad and Zephyr use different REST API endpoints.</li>
+<li>Update automation scripts before migration.</li>
+<li>Advanced custom fields are not migrated.</li>
+<li>BDD data is not fully supported in Zephyr.</li>
+<li>Test execution saved filters are not migrated.</li>
+<li>Some Zephyr Squad reports and gadgets have no direct Zephyr equivalent.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Squad%20to%20Zephyr%20Upgrade%20Guide/" class="btn btn-neutral float-left" title="Squad to Zephyr Upgrade Guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Product%20comparison/" class="btn btn-neutral float-right" title="Product comparison">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Squad%20to%20Zephyr%20Upgrade%20Guide/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Product%20comparison/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

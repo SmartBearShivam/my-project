@@ -6,5 +6,8 @@ nav:
   - Migrate to Zephyr:
       - Migrate to Zephyr: Migrate to Zephyr.md
       - Squad to Zephyr Upgrade Guide: Squad to Zephyr Upgrade Guide.md
+      - Feature comparison: Feature comparison.md
+      - Product comparison: Product comparison.md
+      - Data Transfer: Data transfer.md
   - About: about.md
 theme: readthedocs

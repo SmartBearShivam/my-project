@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Data Transfer - Sample documentation Site</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Data Transfer";
+        var mkdocs_page_input_path = "Data transfer.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Sample documentation Site
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Welcome to the Zephyr Documentation</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../comparison/">Zephyr Editions Feature Comparison</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../roadmap/">Roadmap</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Migrate to Zephyr</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Migrate%20to%20Zephyr/">Migrate to Zephyr</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Squad%20to%20Zephyr%20Upgrade%20Guide/">Squad to Zephyr Upgrade Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Feature%20comparison/">Feature comparison</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Product%20comparison/">Product comparison</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Data Transfer</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#test-case-field-mapping">Test case field mapping</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-case-custom-fields">Test case custom fields</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-case-steps-mapping">Test case steps mapping</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-case-history">Test case history</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-cycle-field-mapping">Test cycle field mapping</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-execution-field-mapping">Test execution field mapping</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#status-mapping">Status mapping</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-step-result-mapping">Test step result mapping</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-cycle-structure-mapping">Test cycle structure mapping</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#api-tokens">API tokens</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#test-automation">Test automation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#data-not-migrated">Data not migrated</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../about/">About</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Sample documentation Site</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Migrate to Zephyr</li>
+      <li class="breadcrumb-item active">Data Transfer</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="data-transfer-during-migration">Data transfer during migration</h1>
+<p>During the upgrade from Zephyr Squad to Zephyr or Zephyr Essential, Jira settings and permissions remain unchanged. The following sections describe how data is migrated and mapped.</p>
+<hr />
+<h2 id="test-case-field-mapping">Test case field mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Squad field</th>
+<th>Zephyr field</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Summary</td>
+<td>Name</td>
+<td>Migrated directly</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Objective</td>
+<td>Migrated directly</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Status</td>
+<td>Jira issue statuses are recreated as custom statuses in Zephyr</td>
+</tr>
+<tr>
+<td>Assignee</td>
+<td>Custom field (Assignee)</td>
+<td>Created as a user picker field</td>
+</tr>
+<tr>
+<td>Labels</td>
+<td>Labels</td>
+<td>Migrated directly</td>
+</tr>
+<tr>
+<td>Sprint</td>
+<td>Custom field (Sprint)</td>
+<td>Select list (multi-choice)</td>
+</tr>
+<tr>
+<td>Story points</td>
+<td>Not migrated</td>
+<td>Not supported in Zephyr</td>
+</tr>
+<tr>
+<td>Fix versions</td>
+<td>Custom field (Fix versions)</td>
+<td>Select list (multi-choice)</td>
+</tr>
+<tr>
+<td>Affected versions</td>
+<td>Custom field (Affected version)</td>
+<td>Select list (multi-choice)</td>
+</tr>
+<tr>
+<td>Reporter</td>
+<td>Owner</td>
+<td>Mapped to Owner field</td>
+</tr>
+<tr>
+<td>Priority</td>
+<td>Priority</td>
+<td>Migrated as custom priorities</td>
+</tr>
+<tr>
+<td>Due date</td>
+<td>Custom field (Due Date)</td>
+<td>Date picker</td>
+</tr>
+<tr>
+<td>Original estimate</td>
+<td>Estimated time</td>
+<td>Converted to hh:mm format</td>
+</tr>
+<tr>
+<td>Time tracking</td>
+<td>Not migrated</td>
+<td>Represented differently in Zephyr</td>
+</tr>
+<tr>
+<td>Start dates</td>
+<td>Custom field (Start dates)</td>
+<td>Date picker</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Custom field (Environment)</td>
+<td>Multi-line text field</td>
+</tr>
+<tr>
+<td>Component</td>
+<td>Component</td>
+<td>Multiple values mapped to custom field</td>
+</tr>
+<tr>
+<td>Epic link</td>
+<td>Traceability section</td>
+<td>Linked to Jira issue</td>
+</tr>
+<tr>
+<td>Issue links</td>
+<td>Traceability section</td>
+<td>Linked to Jira issue</td>
+</tr>
+<tr>
+<td>Subtasks</td>
+<td>Traceability section</td>
+<td>Linked to Jira issue</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>Comments</td>
+<td>Migrated directly</td>
+</tr>
+<tr>
+<td>Attachments</td>
+<td>Attachments</td>
+<td>Migrated directly</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="test-case-custom-fields">Test case custom fields</h2>
+<p>All custom fields are migrated except advanced Jira field types.</p>
+<table>
+<thead>
+<tr>
+<th>Squad type</th>
+<th>Zephyr type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Checkboxes</td>
+<td>Select list (multi-choice)</td>
+</tr>
+<tr>
+<td>Date picker</td>
+<td>Date picker</td>
+</tr>
+<tr>
+<td>Date time picker</td>
+<td>Date picker</td>
+</tr>
+<tr>
+<td>Number field</td>
+<td>Number</td>
+</tr>
+<tr>
+<td>Radio buttons</td>
+<td>Select list (single choice)</td>
+</tr>
+<tr>
+<td>Select list (multiple)</td>
+<td>Select list (multi-choice)</td>
+</tr>
+<tr>
+<td>Select list (single)</td>
+<td>Select list (single choice)</td>
+</tr>
+<tr>
+<td>Paragraph</td>
+<td>Text field (multi-line)</td>
+</tr>
+<tr>
+<td>Short text</td>
+<td>Text field (single-line)</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>Text field (multi-line)</td>
+</tr>
+<tr>
+<td>User picker</td>
+<td>User picker</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="test-case-steps-mapping">Test case steps mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Squad</th>
+<th>Zephyr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Test step</td>
+<td>Step</td>
+</tr>
+<tr>
+<td>Test data</td>
+<td>Test data</td>
+</tr>
+<tr>
+<td>Test result</td>
+<td>Expected result</td>
+</tr>
+<tr>
+<td>Attachments</td>
+<td>Attachments</td>
+</tr>
+<tr>
+<td>Custom fields</td>
+<td>Custom fields</td>
+</tr>
+</tbody>
+</table>
+<p>Test step attachments and custom fields are migrated.</p>
+<hr />
+<h2 id="test-case-history">Test case history</h2>
+<p>Test case history is created by combining:</p>
+<ul>
+<li>Jira issue history  </li>
+<li>Test details history  </li>
+</ul>
+<p>All changes are sorted by timestamp and imported as a unified history.</p>
+<hr />
+<h2 id="test-cycle-field-mapping">Test cycle field mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Squad</th>
+<th>Zephyr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Version</td>
+<td>Release version</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Name</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>Custom field</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Custom field</td>
+</tr>
+<tr>
+<td>From</td>
+<td>Planned start date</td>
+</tr>
+<tr>
+<td>To</td>
+<td>Planned end date</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="test-execution-field-mapping">Test execution field mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Squad</th>
+<th>Zephyr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Execution ID</td>
+<td>Execution ID</td>
+</tr>
+<tr>
+<td>Summary</td>
+<td>Summary</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Objective</td>
+</tr>
+<tr>
+<td>Execution status</td>
+<td>Execution status</td>
+</tr>
+<tr>
+<td>Assigned to</td>
+<td>Assigned to</td>
+</tr>
+<tr>
+<td>Defects</td>
+<td>Issues</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>Comments</td>
+</tr>
+<tr>
+<td>Executed by</td>
+<td>Executed by</td>
+</tr>
+<tr>
+<td>Executed on</td>
+<td>Executed on</td>
+</tr>
+<tr>
+<td>Total execution time</td>
+<td>Estimated</td>
+</tr>
+<tr>
+<td>Total logged time</td>
+<td>Actual</td>
+</tr>
+<tr>
+<td>Attachments</td>
+<td>Attachments</td>
+</tr>
+</tbody>
+</table>
+<h3 id="status-mapping">Status mapping</h3>
+<ul>
+<li>UNEXECUTED → Not Executed  </li>
+<li>WIP → In Progress  </li>
+<li>PASS → Pass  </li>
+<li>FAIL → Fail  </li>
+<li>BLOCKED → Blocked  </li>
+<li>Custom → Custom  </li>
+</ul>
+<hr />
+<h2 id="test-step-result-mapping">Test step result mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Squad</th>
+<th>Zephyr</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Step</td>
+<td>Step</td>
+</tr>
+<tr>
+<td>Test data</td>
+<td>Test data</td>
+</tr>
+<tr>
+<td>Result</td>
+<td>Result</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Status</td>
+</tr>
+<tr>
+<td>Comments</td>
+<td>Actual result</td>
+</tr>
+<tr>
+<td>Attachments</td>
+<td>Attachments</td>
+</tr>
+<tr>
+<td>Defects</td>
+<td>Issues</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="test-cycle-structure-mapping">Test cycle structure mapping</h2>
+<p>In Zephyr Squad:
+- Test cycles are grouped by fix versions<br />
+- Folders exist within cycles  </p>
+<p>In Zephyr:
+- Folder hierarchy is created first<br />
+- Test cycles are created inside folders  </p>
+<p>Migration behavior:
+- Squad cycles and folders are converted into Zephyr folders<br />
+- Test cycles are recreated within those folders<br />
+- Fix versions are mapped as fields  </p>
+<p>Ad hoc cycles are migrated into a dedicated <strong>Ad hoc</strong> folder.</p>
+<hr />
+<h2 id="api-tokens">API tokens</h2>
+<p>Existing API tokens from Zephyr Squad are not migrated. Create new tokens in Zephyr.</p>
+<hr />
+<h2 id="test-automation">Test automation</h2>
+<p>Saved automation configurations are not migrated. Zephyr uses REST API-based automation.</p>
+<hr />
+<h2 id="data-not-migrated">Data not migrated</h2>
+<p>The following data is not migrated:</p>
+<ul>
+<li>BDD data  </li>
+<li>Test execution audit logs  </li>
+<li>Test execution saved filters  </li>
+<li>JQL saved filters  </li>
+<li>Test step custom field change history  </li>
+<li>Custom field of type Select list (cascading)  </li>
+<li>Custom field of type Label  </li>
+<li>Advanced custom fields for test cases  </li>
+</ul>
+<hr />
+<h2 id="summary">Summary</h2>
+<p>Migration preserves core testing data, including test cases, steps, executions, and attachments. Some fields are transformed into custom fields, and unsupported data is excluded. Review mappings carefully before migration to ensure compatibility.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Product%20comparison/" class="btn btn-neutral float-left" title="Product comparison"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../about/" class="btn btn-neutral float-right" title="About">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Product%20comparison/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
